@@ -4,14 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next -p 7777",
+    "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "test": "NODE_ENV=test jest --watch",
-    "test-win": "SET NODE_ENV=test&& jest --watch",
+    "start": "NODE_ENV=production node server.js",
     "export": "npm run build && next export"
-  },
-    "heroku-postbuild": "next build"
   },
   "author": "",
   "license": "ISC",
